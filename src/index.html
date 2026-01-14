@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>XO</title>
+</head>
+<body class="w-full bg-gray-100 flex flex-col min-h-screen items-center justify-between py-6">
+
+  <!-- Title -->
+  <h1 class="text-3xl font-bold text-center mt-4">
+    TIC TAC TOE
+  </h1>
+
+  <!-- Game Board -->
+ <div id="game-board" class="grid grid-cols-3 w-96 h-96 mx-auto my-6">
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black; border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black; border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black; border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black; border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-bottom:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden" style="border-right:4px solid black;"></button>
+  <button class="flex items-center justify-center w-32 h-32 text-6xl font-bold cursor-pointer hover:bg-gray-200 focus:outline-none overflow-hidden"></button>
+</div>
+
+
+  <!-- Game Status -->
+  <span id="game-status" class="text-xl font-semibold mb-4"></span>
+
+  <!-- Reset Button at Bottom -->
+  <button type="button" id="game-reset" class="mb-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded shadow hover:bg-blue-700">
+    Reset Game
+  </button>
+
+  <script src="/src/game.js"></script>
+</body>
+</html>
